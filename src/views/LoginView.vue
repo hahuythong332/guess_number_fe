@@ -41,8 +41,8 @@ export default {
         async login() {
             try {
                 const response = await api.post('/auth/login', this.form);
-                console.log("response", response)
                 localStorage.setItem('token', response.result?.token)
+                this.$router.push('/')
             } catch (error) {
                 this.error = "Login Failed!"
             }

@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,vue}", "./node_modules/flowbite/**/*.js"],
-  safelist: ['h-[46px]', 'xl:h-[46px]', 'h-12', 'bg-gray-1a', 'bg-black/40', 'bg-green-100', 'border-green-500', '!max-md:w-[81px]',
-    'px-7', 'bg-red-100', 'border-red-500', 'text-red-700', 'md:pt-[109px]', 'md:pt-[126px]', 'md:pt-[69px]', 'md:pt-[94px]', 'lg:pt-[100px]', 'w-[80px]', 'w-[136px]', 'xl:h-[calc(100vh-69px)]'],
+  safelist: ['w-[400px]'],
   theme: {
     fontFamily: {
       'sans': ['Inter'],
@@ -80,8 +79,5 @@ export default {
       }
     },
   },
-  // eslint-disable-next-line no-undef
-  plugins: [require('flowbite/plugin')],
-
 }
 

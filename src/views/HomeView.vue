@@ -120,7 +120,7 @@ export default {
                 alert("YOUR ANSWER IS : " + response.result.correct)
 
             } catch (error) {
-                alert(error?.response?.data?.message)
+                alert(error?.response?.data?.message ?? error?.response?.data)
             }
         },
         async buyTurns(number) {

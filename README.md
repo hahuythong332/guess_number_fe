@@ -10,7 +10,10 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
+Update .env file:
 
+-- VITE_APP_URL=http://angel-inventors-group.localhost/
+-- VITE_API_BASE_URL=http://localhost:8080/guess_number/api
 
 ## Project Setup
 

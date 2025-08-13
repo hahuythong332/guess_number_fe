@@ -25,7 +25,10 @@
             <div class="flex flex-col gap-5">
                 <p class="font-bold text-2xl">Guess Your Number ( FROM 1 TO 5 )</p>
 
-                <div class="flex items-center gap-5">
+                <div class="flex flex-col items-start gap-5">
+                    <p class="font-bold">Note: When you guess secret number wrong the system will re-generate new number
+                        !</p>
+
                     <p class="">Secret Number: {{ !isGenerate ? 'Please Generate Number' : "*****" }}</p>
 
                     <GenericButton @click="generateSecretNumber"
